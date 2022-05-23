@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue JS CDN</title>
+    <link href="style.css" rel="stylesheet" />
+
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  </head>
+
+  <div id="vue-app">
+    <h2>Events</h2>
+    <!-- <button v-on:click="age ++">Add a Year</button>
+    <button v-on:click="age --">Subtract a Year</button> -->
+    <button @click="add(1)">Add a Year</button>
+    <!-- once modifier -->
+    <button @click.once="add(1)">Add a Year</button>
+    <button v-on:click="subtract(1)">Subtract a Year</button>
+    <button v-on:dblclick="add(10)">Add 10 Years</button>
+    <button v-on:dblclick="subtract(10)">Subtract 10 Years</button>
+    <p>My age is {{age}}</p>
+    <div id="canvas" v-on:mousemove="updateXY">{{ x }} {{ y }}</div>
+
+    <a
+      v-on:click="click"
+      href="https://www.udemy.com/course/master-laravel-6-with-vuejs-fullstack-development/"
+      class=""
+      >Ninja</a
+    >
+    <div class="">
+      <a
+        v-on:click.prevent="click"
+        href="https://www.udemy.com/course/master-laravel-6-with-vuejs-fullstack-development/"
+        class=""
+        >Prevent from going to the specified url</a
+      >
+    </div>
+  </div>
+
+  <body>
+    <script src="app.js"></script>
+  </body>
+</html>

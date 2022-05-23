@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue JS CDN</title>
+    <link href="style.css" rel="stylesheet" />
+
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  </head>
+
+  <div id="vue-app">
+    <h1>{{ greet('afternoon') }}</h1>
+    <p>{{ name }}</p>
+    <p>Job: {{job}}</p>
+    <a v-bind:href="website">The net ninja</a>
+    <p v-html="websiteTag"></p>
+    <!-- <a :href="website">The net ninja</a> -->
+    <input type="text" v-bind:value="name" />
+  </div>
+
+  <body>
+    <script src="app.js"></script>
+  </body>
+</html>
