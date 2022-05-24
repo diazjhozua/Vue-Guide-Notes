@@ -4,7 +4,7 @@
     <ninjas></ninjas> -->
 
     <app-header></app-header>
-    <ninjas ></ninjas>
+    <ninjas v-bind:ninjas="ninjas" ></ninjas>
     <app-footer></app-footer>
   </div>
 </template>
